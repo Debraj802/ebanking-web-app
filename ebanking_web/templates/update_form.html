@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Update email/mobile{% endblock %}
+{% block content %}
+<h2>Update Phone No/Email</h2>
+<form method="POST">
+    <label> Enter Account ID:</label><br>
+    <input type="text" name="acc_id" required><br><br>
+
+    <label> Enter UPI PIN:</label><br>
+    <input type="text" name="upi_pin" required><br><br>
+
+    <label> Select Field To Update:</label><br>
+    <select name="field">
+        <option value="mobile">Mobile Number:</option>
+        <option value="email">Email Address:</option>
+    </select><br><br>
+    <label>Enter New value:</label><br>
+    <input type="text" name="new_value" required><br>
+    <button type="submit">Update</button>
+</form>
+{% endblock %}

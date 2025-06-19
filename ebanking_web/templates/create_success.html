@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Error{% endblock %}
+{% block content %}
+<style>
+    body{
+        background-color: #e6f7ff;
+        font-family: Arial,sans-serif;
+        text-align: center;
+        padding: 30px;
+    }
+    .upi{
+        color: red;
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+<h2>Account Created Successfully for {{name}} with Account ID {{acc_id}}<h2>
+<p class="upi">Your UPI PIN is:{{upi_pin}}</p>
+<p><b>Please save this PIN secretly and Do not Share with any Third Party or Anyone.</b></p>
+<a href="/">Go to Home</a>
+{% endblock %}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-Payment Web System</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 20px;
+                font-family: Arial, sans-serif;
+                background: linear-gradient(to right,#502c41,#ac34db,#6a59b6);
+                color: white;
+            }
+            h1{
+                text-align: center;
+                font-size: 30px;
+            }
+            ul{
+                font-size: 18px;
+                padding-left: 20px;
+            }
+            a{
+                color: #ffff99;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #00ffcc;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <head>
+        <style>
+        body{
+            background: linear-gradient(to right, #2c3e50, #3498db, #9b59b6);
+            color: white;
+            font-family: Arial;
+        }
+        h1{
+            color: #ffcc00;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome To E-Payment Web System</h1>
+        <img src="{{url_for('static' , filename='electronic-payment_v1.png')}}"
+        width="400" alt="logo">
+        <img src="{{url_for('static' , filename='Electronic-payments.png')}}"
+        width="400" alt="logo">
+        <p>Please Select an Option:</p>
+        <ul>
+            <li><a href="/balance">1.Balance Enquiry</a></li>
+            <li><a href="/withdraw">2.Withdraw Money</a></li>
+            <li><a href="/deposit">3.Deposit Money</a></li>
+            <li><a href="/transfer">4.Money Transfer</a></li>
+            <li><a href="/create">5.New Account Activation</a></li>
+            <li><a href="/delete">6.Delete Account</a></li>
+            <li><a href="/update">7.Update Phone/Email</a></li>
+        </ul>
+    </body>
+</html>
