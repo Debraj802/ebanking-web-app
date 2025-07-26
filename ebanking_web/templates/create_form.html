@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Create New Account{% endblock %}
+{% block content %}
+<h2>New Account Activation</h2>
+<form method="POST">
+    <label>3 Digit Account ID: </label><br>
+    <input type="text" name="acc_id" required><br><br>
+    <label>Name: </label><br>
+    <input type="text" name="name" required><br><br>
+    <label>DOB (DD/MM/YYYY): </label><br>
+    <input type="text" name="dob" required><br><br>
+    <label>Initial Deposit: </label><br>
+    <input type="number" name="balance" required><br><br>
+    <label>Mobile Number: </label><br>
+    <input type="text" name="mobile" required><br><br>
+    <label>Email ID: </label><br>
+    <input type="email" name="email" required><br><br>
+    <button type="Submit">Create Account</button>
+</form>
+{% endblock %}

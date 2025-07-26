@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Transfer Money{% endblock %}
+{% block content %}
+<h2>Money Transfer</h2>
+<form method="POST">
+    <label>Sender's 4-digit UPI PIN:</label><br>
+    <input type="text" name="sender_pin" required><br>
+    <label>Beneficiary 3-digit Account ID:</label><br>
+    <input type="text" name="beneficiary_id" required><br>
+    <label>Amount To Transfer:</label><br>
+    <input type="number" name="amount" required><br>
+    <button type="submit">Transfer</button>
+</form>
+{% endblock %}

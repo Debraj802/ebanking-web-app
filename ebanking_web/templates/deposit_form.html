@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Deposit Money{% endblock %}
+{% block content %}
+<h2>Deposit Money</h2>
+<form method="POST">
+    <label>Enter 3 Digit Account ID:</label><br>
+    <input type="text" name="acc_id" required><br>
+    <label>Enter Amount to Deposit:</label><br>
+    <input type="text" name="amount" required><br>
+
+    <button type="Submit">Deposit</button>
+</form>
+{% endblock %}

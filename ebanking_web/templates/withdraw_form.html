@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Withdraw Money{% endblock %}
+{% block content %}
+<h2>Withdraw Money</h2>
+<form method="POST">
+    <label>Enter Your 4 Digit UPI PIN:</label><br>
+    <input type="text" name="upi_pin" required><br><br>
+
+    <label>Enter Amount To Withdraw:</label><br>
+    <input type="text" name="amount" required><br><br>
+    <button type="submit">withdraw</button>
+</form>
+{% endblock %}
+
